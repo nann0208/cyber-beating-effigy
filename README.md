@@ -1,6 +1,7 @@
-# Jade Jabs · Paper Doll Reset
+# 赛博打小人
 
-A tiny, private, browser-based frustration reset ritual. Enter a label for the feeling, then tap the paper doll to trigger the three-stage swat animation and count your jabs.
+去年去香港看状子前，还有朋友问我要不要去体验一下地方民俗打小人。我当时心想，我这么善良的人哪里会有仇人，于是没去。那是因为但是还没遇到我前男友......
+如果你也遇到了让你不开心的人或事，就来打他小人吧。
 
 ## Run locally
 
