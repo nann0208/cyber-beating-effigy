@@ -158,3 +158,12 @@ body, body * { font-family:"方正颜宋简体_大","Microsoft JhengHei","PMingL
 
 .welcome-signoff { margin:10px 0 0; color:#5c8b6a; font:500 12px/1.4 '方正颜宋简体_大','Microsoft JhengHei','PMingLiU','MingLiU','Noto Serif CJK TC',serif; letter-spacing:.04em; }
 @media (max-width:700px){ .welcome-signoff { margin-top:4px; font-size:11px; } }
+
+/* Larger touch target and clean tap feedback */
+.stage, .stage * { user-select:none; -webkit-user-select:none; -webkit-touch-callout:none; }
+.stage img { -webkit-user-drag:none; user-drag:none; }
+.stage.has-frames .doll { width:48%; height:72%; left:46%; bottom:5%; outline:none; -webkit-tap-highlight-color:transparent; touch-action:manipulation; }
+.doll:focus:not(:focus-visible) { outline:none; }
+@media (max-width:700px){
+  .stage.has-frames .doll { width:66%; height:72%; left:27%; bottom:4%; }
+}
