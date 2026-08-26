@@ -1,7 +1,6 @@
-# Jade Jabs · Paper Doll Reset
+# 赛博打小人
 
-A tiny, private, browser-based frustration reset ritual. Enter a label for the feeling, then tap the paper doll to trigger the three-stage swat animation and count your jabs.
-
+看完《大状王》的一些脑洞。
 ## Run locally
 
 Open `index.html` directly in a browser, or serve the folder with any static file server. There are no build steps, dependencies, APIs, or external assets required.
