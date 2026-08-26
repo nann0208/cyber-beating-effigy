@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="一個只屬於你的紙人解壓小遊戲。" />
-  <title>紙人解壓</title>
+  <meta name="description" content="我打我打" />
+  <title>賽博打小人</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <main class="app-shell">
     <section class="setup-screen" id="setup-screen" aria-labelledby="setup-title">
       <p class="setup-kicker">賽博打小人</p>
-      <h1 id="setup-title">看官你好，<br /><em>請問你的小人叫？</em></h1>
-      <label class="sr-only" for="label-input">請輸入小人的名字或煩惱</label>
+      <h1 id="setup-title">看官你好，<br /><em>請問你嘅小人叫？</em></h1>
+      <label class="sr-only" for="label-input">請輸入小人嘅名字或煩惱</label>
       <input id="label-input" maxlength="28" placeholder="寫下名字或煩惱" autocomplete="off" />
       <div class="avatar-picker">
         <input id="avatar-input" type="file" accept="image/*" />
@@ -22,9 +22,10 @@
       <div class="avatar-preview" id="avatar-preview" aria-live="polite"><span>頭像預覽</span></div>
       <button class="start-button" id="start-button" type="button">請小人入場 <span aria-hidden="true">→</span></button>
       <p class="welcome-signoff">啊咦吔我莫如做隻狗～</p>
+      <p class="welcome-signoff">designed by xhs@布楠佩斯大饭店</p>
     </section>
 
-    <section class="game-screen" id="game-screen" hidden aria-label="紙人解壓遊戲">
+    <section class="game-screen" id="game-screen" hidden aria-label="賽博打小人">
       <div class="game-card">
         <div class="stage" id="stage" aria-label="點擊紙人進行拍打">
           <div class="frame-stack" aria-hidden="true">
