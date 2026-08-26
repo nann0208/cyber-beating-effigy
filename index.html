@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="一個只屬於你的紙人解壓小遊戲。" />
+  <title>紙人解壓</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="setup-screen" id="setup-screen" aria-labelledby="setup-title">
+      <p class="setup-kicker">賽博打小人</p>
+      <h1 id="setup-title">看官你好，<br /><em>請問你的小人叫？</em></h1>
+      <label class="sr-only" for="label-input">請輸入小人的名字或煩惱</label>
+      <input id="label-input" maxlength="28" placeholder="寫下名字或煩惱" autocomplete="off" />
+      <div class="avatar-picker">
+        <input id="avatar-input" type="file" accept="image/*" />
+        <button id="avatar-pick" type="button">為小人規劃頭像</button>
+        <span id="avatar-status">也可以從相簿選一張照片</span>
+      </div>
+      <div class="avatar-preview" id="avatar-preview" aria-live="polite"><span>頭像預覽</span></div>
+      <button class="start-button" id="start-button" type="button">請小人入場 <span aria-hidden="true">→</span></button>
+      <p class="welcome-signoff">啊咦吔我莫如做隻狗～</p>
+    </section>
+
+    <section class="game-screen" id="game-screen" hidden aria-label="紙人解壓遊戲">
+      <div class="game-card">
+        <div class="stage" id="stage" aria-label="點擊紙人進行拍打">
+          <div class="frame-stack" aria-hidden="true">
+            <img class="scene-frame is-active" data-frame="preparation" src="assets/character-preparation.png" alt="" />
+            <img class="scene-frame" data-frame="impact" src="assets/character-impact.png" alt="" />
+            <img class="scene-frame" data-frame="recoil" src="assets/character-recoil.png" alt="" />
+          </div>
+          <p class="scene-message" id="scene-message">我打你個「<span id="doll-name">這個煩惱</span>」，<br /><span id="dialogue-tail">我打到你腰骨坐不定！</span></p>
+          <img class="avatar-badge" id="avatar-badge" alt="" hidden />
+          <button class="doll" id="doll" type="button" aria-label="點擊紙人"><span class="doll-head"></span><span class="doll-body"></span><span class="doll-arm doll-arm-left"></span><span class="doll-arm doll-arm-right"></span><span class="doll-leg doll-leg-left"></span><span class="doll-leg doll-leg-right"></span></button>
+        </div>
+        <div class="game-counter" aria-live="polite"><span>恭喜老爺，賀喜老爺</span><strong id="tap-count">0</strong><small>連勝</small></div>
+        <button class="reset-button" id="reset-button" type="button">重新開始 <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+  </main>
+  <script src="assets/app.js"></script>
+</body>
+</html>
+
